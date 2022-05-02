@@ -13,20 +13,30 @@ let swiper = new Swiper(".swiper", {
           slidesPerView: 4
         },
         1000: {
-          slidesPerView: 3
+          slidesPerView: 3,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          
         },
         769: {
-          slidesPerView: 2
+          slidesPerView: 2,
+          pagination: {
+            el: ".swiper-pagination",
+          },
         },
         572: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          pagination: {
+            el: ".swiper-pagination",
+          },
         },
         100: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          pagination: {
+            el: ".swiper-pagination",
+          },
         }
-      },
-      pagination: {
-        el: ".swiper-pagination",
       },
 })
 
@@ -55,4 +65,22 @@ nav.addEventListener("click", function(e){
       behavior: "smooth"
     })
   }
+})
+
+
+window.addEventListener("scroll", function(){
+  if (scrollY >= 200) {
+    document.querySelector(".arrowUp").classList.add("arrowUp__visible")
+  } else {
+    document.querySelector(".arrowUp").classList.remove("arrowUp__visible")
+  }
+})
+
+let arrow = document.querySelector(".arrowUp")
+
+arrow.addEventListener("click", function(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 })
