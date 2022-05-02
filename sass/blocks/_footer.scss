@@ -1,0 +1,99 @@
+.footer {
+    min-height: 768px;
+    background: #2B2B2B;
+    padding-top: 0;
+    &__wrapper {
+        padding-top: 67px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &_title {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #55B74C;
+            margin-bottom: 20px;
+            &_mt {
+                margin-top: 69px;
+            }
+        }
+        &_list {
+            &_type {
+                margin: 7.5px 0;
+                &_tel {
+                    a {
+                        color: #fff !important;
+                        font-weight: 500;
+                        img {
+                            margin-right: 13px;
+                        }
+                    }
+                }
+                a {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #898989;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__wrapper_second {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 73px;
+    }
+    &__payment {
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+        &_item {
+            cursor: pointer;
+            margin: 0 10px;
+            &:nth-child(10) {
+                margin-top: 27px;
+            }
+            &:nth-child(9) {
+                margin-top: 27px;
+            }
+            &:nth-child(8) {
+                margin-top: 27px;
+            }
+            &:nth-child(7) {
+                margin-top: 27px;
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        &_social {
+            margin: 0 15px;
+            cursor: pointer;
+            svg {
+                width: 35px;
+                fill: #55B74C;
+                height: 35px;
+                &:hover {
+                    fill: gray;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+    &__text {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #898989;
+        margin-top: 93px;
+        text-align: center;
+    }
+}

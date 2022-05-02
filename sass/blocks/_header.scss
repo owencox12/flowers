@@ -1,0 +1,103 @@
+.header {
+    min-height: 176px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 43px;
+    }
+    &__menu {
+        &_list {
+            display: flex;
+            &_type {
+                margin: 0 25px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #000000;
+                    text-decoration: none;
+                    outline: none;
+                    &:hover {
+                        color: rgba(0,0,0,.6);
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+    &__link {
+        a {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #55B74C;
+            text-decoration: none;
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__inner {
+        margin-top: 33px;
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_buttons {
+            display: flex;
+            &_button {
+                margin: 0 10px;
+            }
+        }
+        &_info {
+            &_title {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #898989;
+            }
+            &_adres {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000000;
+            }
+            &_link {
+                a {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #55B74C;
+                    text-decoration: none;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            display: flex;
+            &_block {
+                margin: 0 49px;
+            }
+        }
+    }
+    &__burger_list {
+        display: none;
+    }
+}

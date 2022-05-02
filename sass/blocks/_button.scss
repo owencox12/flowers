@@ -1,0 +1,45 @@
+.button {
+    border: none;
+    &:hover {
+        background: rgba(0,0,0,.5);
+        transition: all .3s;
+    }
+    &--slider {
+        width: 278px;
+        height: 50px;
+        background: #55B74C;
+        border-radius: 7px;
+        border: none;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+    &--order {
+        width: 356px;
+        height: 59px;
+        border: 2px solid #55B74C;
+        border-radius: 7px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #55B74C;
+    }
+    &--orderSecond {
+        width: 303px;
+        height: 59px;
+        background: #55B74C;
+        border-radius: 7px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+}

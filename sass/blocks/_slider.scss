@@ -1,0 +1,70 @@
+.slider {
+    padding-top: 85px;
+    position: relative;
+    &__title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: #000000;
+    }
+    &__item {
+        margin-top: 30px;
+        &_title {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 30px;
+            color: #000000;
+            margin-top: 24px;
+        }
+        &_prices {
+            display: flex;
+            margin-top: 24px;
+            &_price {
+                &_now {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: #000000;
+                }
+                &_old {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 30px;
+                    text-decoration-line: line-through;
+                    color: #898989;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &__right {
+        position: absolute;
+        right: -5%;
+        top: 45%;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    &__left {
+        position: absolute;
+        left: -7%;
+        top: 45%;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .swiper-pagination {
+        position: absolute;
+        top: 78%;
+    }
+    .swiper {
+        height: 700px;
+    }
+}

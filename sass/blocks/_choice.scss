@@ -1,0 +1,63 @@
+.choice {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 75px;
+    }
+    &__item {
+        &:nth-child(5) {
+            margin-top: 30px;
+        }
+        &:nth-child(6) {
+            margin-top: 30px;
+        }
+        &:nth-child(7) {
+            margin-top: 30px;
+        }
+        &:nth-child(8) {
+            margin-top: 30px;
+        }
+        &_image {
+            position: relative;
+            &_text {
+                background: rgba(85, 183, 76, 0.8);
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                &_name {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin-top: 10px;
+                    position: relative;
+                    z-index: 4000;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.choice__item_second .choice__item_image_mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+    z-index: 3000;
+}
+
+.choice__item_second .choice__item_image_mask:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.03);
+}

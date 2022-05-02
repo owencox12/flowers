@@ -1,0 +1,53 @@
+.about {
+    padding-top: 75px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 29px;
+        &_second {
+            margin-top: 30px;
+        }
+    }
+    &__item {
+        width: 25%;
+        &_image {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &_title {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000;
+            margin-top: 12px;
+        }
+        &_descr {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #000000;
+            width: 278px;
+            margin-top: 3px;
+        }
+    }
+    &__title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: #000000;
+        &_second {
+            margin-top: 75px;
+        }
+    }
+}
